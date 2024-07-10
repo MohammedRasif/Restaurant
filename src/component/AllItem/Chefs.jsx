@@ -9,10 +9,17 @@ import { FaFacebook } from "react-icons/fa";
 import { FaInstagramSquare } from "react-icons/fa";
 import { FaTwitter } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
+import AOS from "aos";
+import "aos/dist/aos.css"
+
+import { useEffect } from "react";
 
 
 
 const Chefs = () => {
+    useEffect(()=>{
+        AOS.init({duration:1200})
+    })
     return (
         <div className="m-20">
                 <div className=" pb-10">
@@ -22,7 +29,7 @@ const Chefs = () => {
                 <div className="mb-10">
                     <div className="grid lg:grid-cols-3 grid-cols-1 gap-6 mb-10">
                         <div>
-                            <img src={img} className="h-[400px]" alt="" />
+                            <img src={img} className="h-[400px]" alt="" data-aos="flip-left" />
                             <div className=" ml-32">
                                 <h1 className="text-2xl text-orange-400">Walter White</h1>
                                 <h1 className="font-bold text-white ml-4">Master Chef</h1>
@@ -35,7 +42,7 @@ const Chefs = () => {
                             </div>
                         </div>
                         <div>
-                            <img src={img1} className="h-[400px]" alt="" />
+                            <img src={img1} className="h-[400px]" alt="" data-aos="flip-left"/>
                             <div className=" ml-32">
                                 <h1 className="text-2xl text-orange-400">Sarah Jhonson</h1>
                                 <h1 className="font-bold text-white ml-10">Patissier</h1>
@@ -48,7 +55,7 @@ const Chefs = () => {
                             </div>
                         </div>
                         <div>
-                            <img src={img2} className="h-[400px]" alt="" />
+                            <img src={img2} className="h-[400px]" alt=""  data-aos="flip-left" />
                             <div className=" ml-32">
                                 <h1 className="text-2xl text-orange-400">William Anderson</h1>
                                 <h1 className="font-bold text-white ml-16">Cook</h1>

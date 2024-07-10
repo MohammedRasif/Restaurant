@@ -1,12 +1,20 @@
 import img from "../../img/specials-1.png"
 
+import AOS from "aos";
+import "aos/dist/aos.css"
+
+import { useEffect } from "react";
+
 const Specials = () => {
+    useEffect(()=>{
+        AOS.init({duration:1200})
+    })
     return (
         <div className="p-20 ">
             <h1 className="text-xl pb-2">SPECIALS ......................</h1>
             <h1 className="text-4xl text-orange-400 pb-10">Check Our Specials</h1>
             <div className="flex items-center">
-                <div className="w-1/4 space-y-5 font-bold border-r-orange-400 ">
+                <div className="w-1/4 space-y-5 font-bold border-r-orange-400 "data-aos="fade-right">
                     <h1 className="py-2 pl-4 bg-orange-400 text-black">Modi sit est</h1>
                     <h1 className="pl-4">Unde praesentium sed</h1>
                     <h1 className="pl-4">Pariatur explicabo vel</h1>
@@ -18,7 +26,7 @@ const Specials = () => {
                     <p>Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
                     <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
                 </div>
-                <div>
+                <div data-aos="fade-left">
                     <img src={img} className="h-80" alt="" />
                 </div>
             </div>

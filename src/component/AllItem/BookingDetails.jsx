@@ -9,7 +9,7 @@ import { FaFilePdf } from "react-icons/fa";
 const BookingDetails = () => {
     const booking = useLoaderData()
     const {name,email,phone,time,date,people,photo,pdf,description,_id}=booking
-    console.log(booking) 
+    // console.log(booking) 
     return (
         <div className="card w-[600px] ml-[500px] glass">
         <figure><img src={photo} alt="car!"/></figure>

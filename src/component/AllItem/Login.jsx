@@ -20,14 +20,14 @@ const Login = () => {
         const form = event.target 
         const email = form.email.value 
         const password = form.password.value 
-        console.log(email,password)
+        // console.log(email,password)
         try {
             const result = await signIn(email,password)
-            console.log(result)
+            // console.log(result)
             navigate('/')
             toast.success('SignIn Successfully')
         } catch (error){
-            console.log(error)
+            // console.log(error)
             toast.error(error?.massage)
         }
     }
@@ -42,7 +42,7 @@ const Login = () => {
 
 
         } catch (error) {
-            console.log(error)
+            // console.log(error)
             toast.error(error?.massage)
         }
     }

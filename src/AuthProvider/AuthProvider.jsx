@@ -39,7 +39,7 @@ const AuthProvider = ({ children }) => {
   }
 
   const signIn = (email, password) => {
-    console.log(email,password)
+    // console.log(email,password)
     setLoading(true)
     return signInWithEmailAndPassword(auth, email, password)
   }
@@ -69,13 +69,13 @@ const AuthProvider = ({ children }) => {
       const loggedUser = {email:userEmail};
 
       setUser(currentUser)
-      console.log('CurrentUser-->', currentUser)
+      // console.log('CurrentUser-->', currentUser)
       setLoading(false);
       if (currentUser){
         axios.post('http://localhost:5000/jwt',loggedUser , {
           withCredentials:true })
         .then(res => {
-          console.log('token response',res.data)
+          // console.log('token response',res.data)
         })
       }
       else{
@@ -83,7 +83,7 @@ const AuthProvider = ({ children }) => {
           withCredentials:true
         })
         .then(res => {
-          console.log(res.data)
+          // console.log(res.data)
         })
       }
     })

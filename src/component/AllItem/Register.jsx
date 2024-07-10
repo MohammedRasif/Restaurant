@@ -15,22 +15,22 @@ const Register = () => {
         const name = form.name.value
         const email = form.email.value 
         const password = form.password.value 
-        console.log(email,password,name)
+        // console.log(email,password,name)
         try {
             const result = await createUser(email,password)
-            console.log(result)
+            // console.log(result)
            
             // navigate('/')
             toast.success('SignIn Successfully')
         } catch (error){
-            console.log(error)
+            // console.log(error)
             toast.error(error?.massage)
         }
     }
 
 
     return (
-        <div className="hero min-h-screen bg-base-200">
+        <div className="hero min-h-screen bg-base-200 pt-20">
         <div className="hero-content flex-col text-orange-400">
             <div className="text-center ">
             <h1 className="text-5xl font-bold ">Register Now...!</h1>

@@ -11,10 +11,10 @@ import Swal from "sweetalert2";
 const MyListed = ({bookings}) => {
   
     const {name,email,phone,time,date,people,photo,pdf,description,_id} = bookings
-    console.log(_id);
+    // console.log(_id);
 
     const handelDelete = _id => {
-        console.log(_id);
+        // console.log(_id);
 
         
         Swal.fire({
@@ -28,7 +28,7 @@ const MyListed = ({bookings}) => {
         }).then((result) => {
         if (result.isConfirmed) {
           
-            fetch(`http://localhost:5000/bookings/${_id}`,{
+            fetch(`http://localhost:5000/${_id}`,{
                 method:'DELETE'
             })
             .then(res=>res.json())
@@ -46,7 +46,7 @@ const MyListed = ({bookings}) => {
         
     }
     return (
-        <div className="mx-96 my-10 text-white ">
+        <div className="mx-96 my-10  text-white ">
             <div className="card card-side bg-base-100 shadow-xl">
             <figure><img src={photo} className="h-80 pl-10" alt="Movie"/></figure>
             <div className="p-5">

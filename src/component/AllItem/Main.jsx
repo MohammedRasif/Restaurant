@@ -1,10 +1,16 @@
 import img from "../../img/about-bg.jpg"
 import img1 from "../../img/about.jpg"
 import { CgCheckO } from "react-icons/cg";
+import AOS from "aos";
+import "aos/dist/aos.css"
 
+import { useEffect } from "react";
 
 
 const Main = () => {
+    useEffect(()=>{
+        AOS.init({duration:1200})
+    })
     return (
         <div className="carousel w-full h-[600px] ">
         <div id="slide1" className="carousel-item relative w-full   ">
@@ -28,7 +34,7 @@ const Main = () => {
                 <p className="pb-10">Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
             </div>
             <div className=" pr-20 ">
-                <img src={img1} className="h-[450px] w-[650px] ml-10 mt-20 " alt="" />
+                <img src={img1} className="h-[450px] w-[650px] ml-10 mt-20 " alt="" data-aos="zoom-in-left" />
             </div>
             </div>
             

@@ -17,9 +17,9 @@ const Booking = () => {
         const description = form.description.value;
 
         const allbooking = {name,email,phone,time,date,people,photo,pdf,description}
-        console.log(allbooking);
+        // console.log(allbooking);
 
-        fetch('http://localhost:5000/booking',{credentials:"include"},{
+        fetch('http://localhost:5000',{credentials:"include"},{
             method:'POST',
             headers:{
                 'content-type':'application/json'
@@ -28,14 +28,14 @@ const Booking = () => {
         })
         .then(res => res.json())
         .then(data => {
-            console.log(data)
+            // console.log(data)
            if(data.insertedId){
             toast.success('SignIn Successfully')
            }
         })
 }
     return (
-        <div>
+        <div className="pt-20">
             <h1 className="text-5xl text-orange-400 text-center py-10">Book a Table</h1>
             <form onSubmit={handleBooking}  className="card-body">
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-4">

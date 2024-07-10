@@ -21,9 +21,9 @@ const Conform = () => {
         const description = form.description.value;
 
         const updated = {name,email,phone,time,date,people,photo,pdf,description}
-        console.log(updated);
+        // console.log(updated);
 
-        fetch(`http://localhost:5000/bookings/${_id}`,{
+        fetch(`http://localhost:5000s/${_id}`,{
             method:'PUT',
             headers:{
                 'content-type':'application/json'
@@ -32,7 +32,7 @@ const Conform = () => {
         })
         .then(res => res.json())
         .then(data => {
-            console.log(data)
+            // console.log(data)
            if(data.modifiedCount > 0){
             toast.success('Updated Complete.........')
            }

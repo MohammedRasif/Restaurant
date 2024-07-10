@@ -16,7 +16,7 @@ const Gallary = () => {
                 <h1 className="text-5xl text-orange-400 pb-10">Some photos from Our Restaurant</h1>
             </div>
             <div>
-                <div className="grid lg:grid-cols-4 grid-cols-1">
+                <div className="grid lg:grid-cols-4 md:grid-cols-1 ">
                     <img src={img} alt="" />
                     <img src={img1} alt="" />
                     <img src={img2} alt="" />
