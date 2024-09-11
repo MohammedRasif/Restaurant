@@ -9,7 +9,7 @@ const Header = () => {
       <img src={img1} className="w-full rounded-xl" />
       <div className="absolute rounded-xl flex items-center h-full left-0 top-0 bg-gradient-to-r from-[#151515] to-[rgba(21, 21, 21, 0)]">
         <div className="text-white space-y-7 pl-12 w-2/3">
-          <h2 className="text-6xl font-bold">
+          <h2 className="lg:text-6xl pt-8 font-bold">
             Welcome To <span className="text-orange-400 animate__animated animate__flipInY " >Restaurantly</span>
           </h2>
          

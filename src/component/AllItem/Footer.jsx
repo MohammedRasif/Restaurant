@@ -1,45 +1,61 @@
-import img from "../../img/Removebg-preview.png"
-
+import img from "../../img/Removebg-preview.png";
 
 const Footer = () => {
     return (
-        
-        <div>
-            <h1 className="text-orange-400">---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h1>
-            <footer className="footer p-10 bg-black text-base-content ">
-            
-            <aside>
-                <img src={img}  className="h-48" alt="" />
-                
-            </aside> 
-            <nav>
-                <h6 className="footer-title text-orange-400">Useful Links</h6> 
-                <a className="link link-hover">Home</a>
-                <a className="link link-hover">About</a>
-                <a className="link link-hover">Services</a>
-                <a className="link link-hover">Terms of service</a>
-                <a className="link link-hover">Privacy policy</a>
+        <div className="bg-black text-white">
+            {/* Top Separator */}
+            <hr className="border-t border-gray-700" />
 
-            </nav> 
-            <nav>
-                <h6 className="footer-title text-orange-400">Our Services</h6> 
-                <a className="link link-hover">Web Design</a>
-                <a className="link link-hover">Web Development</a>
-                <a className="link link-hover">Product Management</a>
-                <a className="link link-hover">Marketing</a>
-                <a className="link link-hover">Graphic Design</a>
+            {/* Main Footer Content */}
+            <footer className="footer p-10 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                {/* Logo Section */}
+                <div className="flex flex-col items-center lg:items-start">
+                    <img src={img} className="h-32 w-auto mb-4" alt="Restaurant Logo" />
+                </div>
 
-            </nav> 
-            <nav>
-            <h6 className="footer-title text-orange-400">Location</h6> 
-            <p>A108 Adam Street<br/>Anowara,Chottogram <br />Bangladesh </p>
-            </nav>
+                {/* Useful Links */}
+                <div>
+                    <h6 className="footer-title text-orange-400 mb-4">Useful Links</h6>
+                    <ul className="space-y-2">
+                        <li><a href="#" className="link link-hover hover:text-orange-400 transition-colors">Home</a></li>
+                        <li><a href="#" className="link link-hover hover:text-orange-400 transition-colors">About</a></li>
+                        <li><a href="#" className="link link-hover hover:text-orange-400 transition-colors">Services</a></li>
+                        <li><a href="#" className="link link-hover hover:text-orange-400 transition-colors">Terms of Service</a></li>
+                        <li><a href="#" className="link link-hover hover:text-orange-400 transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+
+                {/* Our Services */}
+                <div>
+                    <h6 className="footer-title text-orange-400 mb-4">Our Services</h6>
+                    <ul className="space-y-2">
+                        <li><a href="#" className="link link-hover hover:text-orange-400 transition-colors">Web Design</a></li>
+                        <li><a href="#" className="link link-hover hover:text-orange-400 transition-colors">Web Development</a></li>
+                        <li><a href="#" className="link link-hover hover:text-orange-400 transition-colors">Product Management</a></li>
+                        <li><a href="#" className="link link-hover hover:text-orange-400 transition-colors">Marketing</a></li>
+                        <li><a href="#" className="link link-hover hover:text-orange-400 transition-colors">Graphic Design</a></li>
+                    </ul>
+                </div>
+
+                {/* Location */}
+                <div>
+                    <h6 className="footer-title text-orange-400 mb-4">Location</h6>
+                    <p>
+                        A108 Adam Street<br />
+                        Anowara, Chottogram<br />
+                        Bangladesh
+                    </p>
+                </div>
             </footer>
-            <div className="bg-stone-900 ">
-            <h1 className="text-orange-400 pb-3">---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------</h1>
-                <div className="text-center py-5 text-white ">
-                    <h1>© Copyright <span className="font-bold">Restaurantly</span>. All Rights Reserved</h1>
-                    <h1>Designed by <span className="text-orange-400"> Mohammed Rasif</span></h1>
+
+            {/* Bottom Separator */}
+            <hr className="border-t border-gray-700" />
+
+            {/* Bottom Footer Content */}
+            <div className="bg-stone-900">
+                <div className="text-center py-5 text-white">
+                    <p>© Copyright <span className="font-bold">Restaurantly</span>. All Rights Reserved</p>
+                    <p>Designed by <span className="text-orange-400">Mohammed Rasif</span></p>
                 </div>
             </div>
         </div>
