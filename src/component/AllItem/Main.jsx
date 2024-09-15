@@ -15,7 +15,7 @@ const Main = () => {
         <div className="carousel w-full h-auto md:h-[600px]">
             <div
                 id="slide1"
-                className="carousel-item relative w-full bg-cover bg-center h-[600px] md:h-[400px] lg:h-[600px]"
+                className="carousel-item relative w-full bg-cover bg-center h-[555px] md:h-[400px] lg:h-[600px]"
                 style={{ backgroundImage: `url(${bgimg})` }}
             >
                 <div className="absolute inset-0 bg-black bg-opacity-50 flex flex-col lg:flex-row items-center lg:items-start px-5 lg:px-32 py-10 lg:py-20">

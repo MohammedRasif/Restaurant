@@ -16,9 +16,9 @@ const Home = () => {
             <Choose></Choose>
             <Menu></Menu>
             <Specials></Specials>
-            {/* <Testimonials></Testimonials>
+            <Testimonials></Testimonials>
             <Gallary></Gallary>
-            <Chefs></Chefs> */}
+            <Chefs></Chefs>
         </div>
     );
 };
