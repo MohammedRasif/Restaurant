@@ -29,15 +29,15 @@ const Main = () => {
                         </p>
                         <div className="space-y-3">
                             <div className="flex items-start">
-                                <CgCheckO className="text-orange-400 text-xl mr-2" />
+                                <CgCheckO className="text-orange-400 text-xl pr-2" />
                                 <p> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                             </div>
                             <div className="flex items-start">
-                                <CgCheckO className="text-orange-400 text-xl mr-2" />
+                                <CgCheckO className="text-orange-400 text-xl pr-2" />
                                 <p> Duis aute irure dolor in reprehenderit in voluptate velit.</p>
                             </div>
                             <div className="flex items-start">
-                                <CgCheckO className="text-orange-400 text-xl mr-2" />
+                                <CgCheckO className="text-orange-400 text-xl pr-2" />
                                 <p>
                                     Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda
                                     mastiro dolore eu fugiat nulla pariatur.
@@ -49,10 +49,10 @@ const Main = () => {
                             reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
                         </p>
                     </div>
-                    <div className="mt-10 lg:mt-0 lg:ml-10 w-full lg:w-auto">
+                    <div className="pt-10 lg:pt-0 lg:px-10 w-full lg:w-auto">
                         <img
                             src={img1}
-                            className="w-full lg:h-[500px] lg:w-[800px]  h-auto  md:w-10/12 lg:max-w-lg mx-auto"
+                            className="w-full lg:h-[500px] lg:w-[800px] h-auto md:w-10/12 lg:max-w-lg px-auto"
                             alt=""
                             data-aos="zoom-in-left"
                         />

@@ -14,7 +14,7 @@ const Chefs = () => {
     });
 
     return (
-        <div className="m-7 lg:m-20">
+        <div className="p-7 lg:m-20">
             {/* Heading Section */}
             <div className="pb-10 text-center">
                 <h1 className="text-2xl">WHY US.......</h1>

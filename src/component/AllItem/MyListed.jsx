@@ -46,7 +46,7 @@ const MyListed = ({bookings}) => {
         
     }
     return (
-        <div className="mx-96 my-10  text-white ">
+        <div className="px-96 my-10  text-white ">
             <div className="card card-side bg-base-100 shadow-xl">
             <figure><img src={photo} className="h-80 pl-10" alt="Movie"/></figure>
             <div className="p-5">

@@ -17,7 +17,7 @@ const Menu = () => {
   });
 
   return (
-    <div className="bg-stone-900 p-1 md:p-14 lg:p-20">
+    <div className="bg-stone-900  px-4 lg:px-20 py-10 ">
       <h1 className="text-xl pb-2 text-center">MENU</h1>
       <h1 className="lg:text-6xl text-4xl text-orange-400 pb-10 text-center">
         Check Our Tasty Menu
@@ -26,10 +26,10 @@ const Menu = () => {
       <div className="grid lg:grid-cols-2 gap-y-10 gap-x-8">
         {/* Item 1 */}
         <div className="flex flex-col sm:flex-row items-center sm:items-start" data-aos="zoom-in">
-          <div className="sm:pr-5 mb-4 sm:mb-0">
+          <div className="sm:pr-5 pb-4 sm:pb-0">
             <img
               src={img1}
-              className="h-20 w-20 p-1 bg-orange-400 rounded-full mx-auto"
+              className="h-20 w-20 p-1 bg-orange-400 rounded-full"
               alt="Bread Barrel"
             />
           </div>
@@ -43,10 +43,10 @@ const Menu = () => {
 
         {/* Item 2 */}
         <div className="flex flex-col sm:flex-row items-center sm:items-start" data-aos="zoom-in">
-          <div className="sm:pr-5 mb-4 sm:mb-0">
+          <div className="sm:pr-5 pb-4 sm:pb-0">
             <img
               src={img2}
-              className="h-20 w-20 p-1 bg-orange-400 rounded-full mx-auto"
+              className="h-20 w-20 p-1 bg-orange-400 rounded-full"
               alt="Caesar Selections"
             />
           </div>
@@ -58,12 +58,14 @@ const Menu = () => {
           </div>
         </div>
 
+        {/* Remaining menu items */}
+        
         {/* Item 3 */}
         <div className="flex flex-col sm:flex-row items-center sm:items-start" data-aos="zoom-in">
-          <div className="sm:pr-5 mb-4 sm:mb-0">
+          <div className="sm:pr-5 pb-4 sm:pb-0">
             <img
               src={img3}
-              className="h-20 w-20 p-1 bg-orange-400 rounded-full mx-auto"
+              className="h-20 w-20 p-1 bg-orange-400 rounded-full"
               alt="Mozzarella Stick"
             />
           </div>
@@ -77,10 +79,10 @@ const Menu = () => {
 
         {/* Item 4 */}
         <div className="flex flex-col sm:flex-row items-center sm:items-start" data-aos="zoom-in">
-          <div className="sm:pr-5 mb-4 sm:mb-0">
+          <div className="sm:pr-5 pb-4 sm:pb-0">
             <img
               src={img4}
-              className="h-20 w-20 p-1 bg-orange-400 rounded-full mx-auto"
+              className="h-20 w-20 p-1 bg-orange-400 rounded-full"
               alt="Spinach Salad"
             />
           </div>
@@ -94,10 +96,10 @@ const Menu = () => {
 
         {/* Item 5 */}
         <div className="flex flex-col sm:flex-row items-center sm:items-start" data-aos="zoom-in">
-          <div className="sm:pr-5 mb-4 sm:mb-0">
+          <div className="sm:pr-5 pb-4 sm:pb-0">
             <img
               src={img5}
-              className="h-20 w-20 p-1 bg-orange-400 rounded-full mx-auto"
+              className="h-20 w-20 p-1 bg-orange-400 rounded-full"
               alt="Lobster Bisque"
             />
           </div>
@@ -111,10 +113,10 @@ const Menu = () => {
 
         {/* Item 6 */}
         <div className="flex flex-col sm:flex-row items-center sm:items-start" data-aos="zoom-in">
-          <div className="sm:pr-5 mb-4 sm:mb-0">
+          <div className="sm:pr-5 pb-4 sm:pb-0">
             <img
               src={img6}
-              className="h-20 w-20 p-1 bg-orange-400 rounded-full mx-auto"
+              className="h-20 w-20 p-1 bg-orange-400 rounded-full"
               alt="Lobster Roll"
             />
           </div>
@@ -128,10 +130,10 @@ const Menu = () => {
 
         {/* Item 7 */}
         <div className="flex flex-col sm:flex-row items-center sm:items-start" data-aos="zoom-in">
-          <div className="sm:pr-5 mb-4 sm:mb-0">
+          <div className="sm:pr-5 pb-4 sm:pb-0">
             <img
               src={img7}
-              className="h-20 w-20 p-1 bg-orange-400 rounded-full mx-auto"
+              className="h-20 w-20 p-1 bg-orange-400 rounded-full"
               alt="Mozzarella Stick"
             />
           </div>
@@ -145,15 +147,15 @@ const Menu = () => {
 
         {/* Item 8 */}
         <div className="flex flex-col sm:flex-row items-center sm:items-start" data-aos="zoom-in">
-          <div className="sm:pr-5 mb-4 sm:mb-0">
+          <div className="sm:pr-5 pb-4 sm:pb-0">
             <img
               src={img8}
-              className="h-20 w-20 p-1 bg-orange-400 rounded-full mx-auto"
+              className="h-20 w-20 p-1 bg-orange-400 rounded-full"
               alt="Spinach Salad"
             />
           </div>
           <div className="text-center sm:text-left">
-            <h1 className="text-orange-400 font-bold ">
+            <h1 className="text-orange-400 font-bold">
               Spinach Salad .................................................... $6.95
             </h1>
             <p>Fresh spinach with mushrooms, hard-boiled egg, and warm bacon vinaigrette</p>

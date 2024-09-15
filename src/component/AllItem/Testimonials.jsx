@@ -11,7 +11,7 @@ const Testimonials = () => {
     AOS.init({ duration: 1200 });
   });
   return (
-    <div className=" bg-stone-900 p-20">
+    <div className=" bg-stone-900 lg:p-20 p-5">
       <h1 className="text-2xl">WHY US.......</h1>
       <h1 className="text-5xl text-orange-400 py-4">
         Why Choose Our Restaurant
@@ -19,7 +19,7 @@ const Testimonials = () => {
       <div>
         <div className="grid lg:grid-cols-3 grid-cols-1 gap-5">
           <div>
-            <div className="bg-stone-800 p-10 text-white rounded-xl">
+            <div className="bg-stone-800 lg:p-10 p-3 text-white rounded-xl">
               <p>
                 {" "}
                 Proin laculis punus consequat sem cure digni ssim donec
