@@ -11,7 +11,7 @@ const Choose = () => {
     <div className="lg:p-20 p-7 ">
      
       <h1>WHY US.......</h1>
-      <h1 className="lg:text-5xl text-3xl text-orange-400 py-4" data-aos="flip-left">
+      <h1 className="lg:text-5xl text-3xl text-orange-400 py-4" >
         Why Choose Our Restaurant
       </h1>
       <div className="grid md:grid-cols-1 lg:grid-cols-3 gap-5">

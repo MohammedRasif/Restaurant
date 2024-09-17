@@ -17,7 +17,7 @@ const Menu = () => {
   });
 
   return (
-    <div className="bg-stone-900  px-4 lg:px-20 py-10 ">
+    <div className="bg-stone-900  px-4 lg:px-20 py-10 text-white ">
       <h1 className="text-xl pb-2 text-center">MENU</h1>
       <h1 className="lg:text-6xl text-4xl text-orange-400 pb-10 text-center">
         Check Our Tasty Menu

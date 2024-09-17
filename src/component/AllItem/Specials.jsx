@@ -48,7 +48,7 @@ const Specials = () => {
   ];
 
   return (
-    <div className="p-5 md:p-10 bg-black overflow-x-hidden mx-auto">
+    <div className="p-5 md:p-10 bg-black overflow-x-hidden mx-auto text-white">
       {/* Heading */}
       <div className="py-5">
         <h1 className="text-xl pb-2 text-center">SPECIALS ......................</h1>
